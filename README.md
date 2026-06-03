@@ -88,8 +88,6 @@ Comando de Execução:
 
 ![Subir Docker](evidencias/subir-docker.png)
 
-![Docker PS](evidencias/docker-ps.png)
-
 
 ## Etapa 9 - Testar API (Consumo de APIs REST)
 
@@ -156,3 +154,9 @@ Comandos utilizado:
 ### Processos:
 
 ![Processos](evidencias/docker-top.png)
+
+## 🏁 Considerações Finais
+
+Este desafio foi uma ótima oportunidade para testar meus conhecimentos práticos com Docker, AWS e Git conectando a teoria que eu tinha com a prática exigida pela vaga. A necessidade de buscar entender como funciona cada passo antes de botar em prática reforçou ainda mais a minha motivação para integrar o time de Infraestrutura Cloud.
+
+Agradeço à equipe pela oportunidade e pelo desafio proposto. Fico à total disposição para aprofundar qualquer asunto ou etapa deste processo durante uma futura conversa!
