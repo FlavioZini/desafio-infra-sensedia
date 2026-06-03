@@ -35,8 +35,8 @@ Acessar a instância via SSH
 
 Comandos utilizados:
 
-`sudo apt update`
-`sudo apt upgrade -y`
+`sudo apt update`  
+`sudo apt upgrade -y`  
 
 ![Atualizar](evidencias/atualiza-sv.png)
 
@@ -45,8 +45,8 @@ Comandos utilizados:
 
 Comandos utilizados:
 
-`sudo apt install docker.io -y`
-`docker --version`
+`sudo apt install docker.io -y`  
+`docker --version`  
 
 ![Versão Docker](evidencias/docker-version.png)
 
@@ -55,16 +55,16 @@ Comandos utilizados:
 
 Comandos utilizados:
 
-`sudo systemctl enable docker`
-`sudo systemctl start docker`
-`sudo systemctl status docker`
+`sudo systemctl enable docker`  
+`sudo systemctl start docker`  
+`sudo systemctl status docker`  
 
 ![Habilitar Docker](evidencias/habilitar-docker.png)
 
 
 ## Etapa 6 - Baixar a imagem
 
-Comandos utilizados:
+Comando utilizado:
 
 `sudo docker pull kennethreitz/httpbin`
 
@@ -73,7 +73,7 @@ Comandos utilizados:
 
 ## Etapa 7 - Validar imagem
 
-Comandos utilizados:
+Comando utilizado:
 
 `sudo docker images`
 
@@ -97,27 +97,36 @@ Comando de Execução:
 ### Abaixo estão as capturas de tela/saídas dos comandos executados validando os endpoints da aplicação através do IP público da AWS.
 
 
-1. Teste de Método GET (`/get`)
+#### 1\. Teste de Método GET (`/get`)
 
-Comando: `curl http://18.229.163.17/get`
+Comando utilizado:  
+
+`curl http://18.229.163.17/get`
 
 Evidência:
 
 ![Teste GET](evidencias/get.png)
 
 
-2. Teste de Método POST (`/post`)
+#### 2\. Teste de Método POST (`/post`)
 
-Comando: `curl -X POST "http://18.229.163.17/post" -d "Vaga: Analista de Suporte..." -d "Candidato: Flavio Zini"`
+Comando utilizado:  
 
-Resultado: Os dados enviados no payload foram refletidos no bloco `form` da resposta.
+`curl -X POST "http://18.229.163.17/post" -d "Vaga: Analista de Suporte..." -d "Candidato: Flavio Zini"`
+
+#### Resultado: Os dados enviados no payload foram refletidos no bloco `form` da resposta.
 
 Evidência:
 
 ![Teste POST](evidencias/post.png)
 
 
-3. Teste de Cabeçalhos e IP (`/headers` e `/ip`)
+#### 3\. Teste de Cabeçalhos e IP (`/headers` e `/ip`)
+
+Comandos utilizados:  
+
+`curl http://18.229.163.17/headers`  
+`curl http://18.229.163.17/ip`
 
 Evidência Headers:
 
@@ -129,6 +138,12 @@ Evidência IP:
 
 
 ## Etapa 10 - Coleta de evidências extras
+
+Comandos utilizado: 
+ 
+`sudo docker logs httpbin`  
+`sudo docker inspect httpbin`  
+`sudo docker top httpbin`  
 
 ### Logs:
 
